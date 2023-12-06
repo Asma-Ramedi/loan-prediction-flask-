@@ -1,0 +1,11 @@
+Machine Learning Project
+Development of an intelligent tool that predicts if a bank customer will be approved for a credit card or not. 
+
+1.	Data Collection: Gather customer data, including historical credit application data and relevant customer attributes.
+2.	Data Preprocessing: Clean and preprocess the data, handling missing values and outliers, and encoding categorical variables.
+3.	Exploratory Data Analysis (EDA): Perform EDA to understand the data's patterns and relationships.
+4.	Feature Engineering: Create new features or transform existing ones to improve model performance.
+5.	Credit Scoring Model: Utilize statistical and probability techniques to build a credit scoring model.
+6.	Machine Learning Model: Use Scikit-Learn to train a machine learning model, such as logistic regression or random forest, based on the engineered features and credit scoring.
+7.	Streamlit Application: Develop a user-friendly interface using Streamlit, allowing bank staff to input customer details and obtain predictions on their credit application. 
+•	Keywords: Python: Scikit-Learn, Streamlit, Statistics and Proba
