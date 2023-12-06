@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>insurance app</title>
+
+    <!-- lien pour fichier css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='temp.css')}}">
+
+</head>
+
+<body>
+    <form method="POST" class="box" action="/" method="post">
+        <br><br><br><br><br><br><br>
+        <h1>Loan prediction</h1>
+        <!-- les champs à remplir -->
+        <input type="text" name="Gender" placeholder="Gender" required  step="any" />
+        <input type="text" name="Married" placeholder="Married" required step="any" />
+        <input type="text" name="Dependents" placeholder="Dependents" required type="number" step="any" />
+        <input type="text" name="Education" placeholder="Education" required  step="any" />
+        <input type="text" name="Self_Employed" placeholder="Self_Employed"  step="any" />
+        <input type="text" name="ApplicantIncome" placeholder="ApplicantIncome" type="number" step="any" />
+        <input type="text" name="Credit_History" placeholder="Credit_History" required type="number" step="any" />
+        <input type="text" name="Property_Area" placeholder="Property_Area" required  step="any" />
+        <input type="text" name="LoanAmount" placeholder="LoanAmount" required type="number" step="any" />
+        <input type="text" name="Loan_Amount_Term" placeholder="Loan_Amount_Term" required type="number" step="any" />
+        
+        <!-- cliquer sur le bouton predict pour executer le code -->
+        <a href="{{ url_for('intro') }}" method="POST" action="submit">
+
+            <input type="submit" name="Login" value="predict" />
+        </a>
+
+        <!-- si on a dans une etat de prediction on affiche le Loan_Status -->
+        {% if pred %}
+        <p style="color:#3498db">Loan_Status : {{ pred }}</p>
+        {% endif %}
+    </form>
+
+
+
+</body>
+
+</html>
